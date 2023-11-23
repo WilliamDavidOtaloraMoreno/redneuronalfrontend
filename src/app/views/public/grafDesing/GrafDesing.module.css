@@ -11,11 +11,13 @@
   src: url("../../../../assets/fonts/ARLRDBD.woff2") format("woff2");
 }
 .containner_grafic {
-  background-image: url("../../../../assets/image/1x/paupipeback.png");
   width: 100%;
   height: auto;
   background-repeat: no-repeat;
   /* background-position: left top; */
+}
+.containner_grafic img{
+  padding-bottom: 5vw;
 }
 .containner_grafic .img_pau {
   padding-left: 10vw;

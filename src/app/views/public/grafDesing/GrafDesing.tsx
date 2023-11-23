@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import Movies from "../../../models/Movie";
 import ServicePrivate from "../../../services/ServicePrivate";
 import ApiBack from "../../../util/domains/ApiBack";
+import banner from "../../../../assets/image/1x/bannerPeliculas.png";
 
 export const GraficDesing = () => {
   const [arrayMovies, setArrayMovies] = useState<Movies[]>([]);
@@ -13,7 +14,6 @@ export const GraficDesing = () => {
   const [moviesPerPage] = useState(78);
 
   const [arrayMoviesAll, setArrayMoviesAll] = useState<Movies[]>([]);
-
 
   const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
 
@@ -34,9 +34,7 @@ export const GraficDesing = () => {
   };
 
   const getAllMoviesAll = async () => {
-    const results = await ServicePrivate.requestGET(
-      ApiBack.GET_ALL_Movie
-    );
+    const results = await ServicePrivate.requestGET(ApiBack.GET_ALL_Movie);
     setArrayMoviesAll(results);
     console.log(results);
     setShow(false);
@@ -48,7 +46,7 @@ export const GraficDesing = () => {
       console.error("La respuesta de la API no es un array:", results);
     }
   };
-  
+
   useEffect(() => {
     getAllMovies(currentPage);
     getAllMoviesAll();
@@ -56,31 +54,12 @@ export const GraficDesing = () => {
   return (
     <>
       <section className={style.containner_grafic}>
-        <h1>
-          <span>Diseño Gráfico</span>
-        </h1>
-        <div className={`row `}>
-          <div className={`col-6 ${style.img_pau}`}>
-            <img src={pauimg} alt="Paulamedia" height={50} width={50} />
-          </div>
-          <div className={`col-6 ${style.texth2}`}>
-            <h2>
-              <b className={style.textfirst}>Damos </b>
-              <b className={style.textsecond}>vida a conceptos </b>
-              <b className={style.therttext}> y creamos</b>{" "}
-              <b className={style.fourthtext}> experiencias visuales</b>{" "}
-              <b>que inspiran, cautivan y</b>{" "}
-              <b className={style.textsecond}> cuentan historias únicas</b>
-            </h2>
-            <p>
-              Prepárate para explorar el mundo de la expresión gráfica con
-              nosotros
-            </p>
-          </div>
-        </div>
-        {/* <div className={style.pipe}>
-          <img src={pipeimg} alt="pipeimg" height={50} width={50} />
-        </div> */}
+        <img
+          src={banner}
+          alt="bannerPeliculas.png"
+          width={"100%"}
+          height={"100%"}
+        />
         <div className={`row ${style.cardss}`}>
           {arrayMovies.map((myMovies) => (
             <div className={`col-2 ${style.con_card}`}>
@@ -95,39 +74,43 @@ export const GraficDesing = () => {
           ))}
         </div>
         <nav>
-  <ul className="pagination justify-content-center">
-    {(() => {
-      const pageCount = Math.ceil(arrayMoviesAll.length / moviesPerPage);
-      const maxPageNumbers = 10; // Puedes ajustar este número según tus preferencias
-      const halfMax = Math.floor(maxPageNumbers / 2);
-      let startPage = Math.max(currentPage - halfMax, 1);
-      let endPage = Math.min(startPage + maxPageNumbers - 1, pageCount);
+          <ul className="pagination justify-content-center">
+            {(() => {
+              const pageCount = Math.ceil(
+                arrayMoviesAll.length / moviesPerPage
+              );
+              const maxPageNumbers = 10; // Puedes ajustar este número según tus preferencias
+              const halfMax = Math.floor(maxPageNumbers / 2);
+              let startPage = Math.max(currentPage - halfMax, 1);
+              let endPage = Math.min(startPage + maxPageNumbers - 1, pageCount);
 
-      // Ajustar el inicio si estamos cerca del final
-      startPage = Math.max(endPage - maxPageNumbers + 1, 1);
+              // Ajustar el inicio si estamos cerca del final
+              startPage = Math.max(endPage - maxPageNumbers + 1, 1);
 
-      const pageNumbers = [];
-      for (let i = startPage; i <= endPage; i++) {
-        pageNumbers.push(i);
-      }
+              const pageNumbers = [];
+              for (let i = startPage; i <= endPage; i++) {
+                pageNumbers.push(i);
+              }
 
-      return pageNumbers.map((number) => (
-        <li
-          key={number}
-          className={`page-item${currentPage === number ? " active" : ""}`}
-        >
-          <a
-            onClick={() => paginate(number)}
-            className="page-link"
-            href="#"
-          >
-            {number}
-          </a>
-        </li>
-      ));
-    })()}
-  </ul>
-</nav>
+              return pageNumbers.map((number) => (
+                <li
+                  key={number}
+                  className={`page-item${
+                    currentPage === number ? " active" : ""
+                  }`}
+                >
+                  <a
+                    onClick={() => paginate(number)}
+                    className="page-link"
+                    href="#"
+                  >
+                    {number}
+                  </a>
+                </li>
+              ));
+            })()}
+          </ul>
+        </nav>
       </section>
     </>
   );
