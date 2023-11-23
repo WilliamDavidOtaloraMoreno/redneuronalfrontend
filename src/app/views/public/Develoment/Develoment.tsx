@@ -1,8 +1,11 @@
 import style from "./Develoment.module.css";
 import santiimg from "../../../../assets/image/1x/santiimg.png";
 import satiimg2 from "../../../../assets/image/1x/santiimg2.png";
+import { useState } from "react";
 
 export const SoftwareDeveloment = () => {
+
+  
   return (
     <>
       <section className={`${style.containner_dev}`}>
@@ -32,6 +35,10 @@ export const SoftwareDeveloment = () => {
               conceptos en soluciones tecnológicas funcionales y efectivas
             </p>
           </div>
+        </div>
+
+        <div>
+
         </div>
       </section>
     </>

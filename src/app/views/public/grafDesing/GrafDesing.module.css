@@ -91,3 +91,11 @@
   width: 60%;
   height: auto;
 }
+.cardss{
+  font-family: "BebasNeue", sans-serif;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+.con_card{
+  padding-bottom: 5vw;
+}
