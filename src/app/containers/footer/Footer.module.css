@@ -1,0 +1,128 @@
+@font-face {
+  font-family: "NunitoSans";
+  src: url("../../../assets/fonts/NunitoSans-Regular.woff2") format("woff2");
+}
+.footer{
+  overflow: hidden;
+}
+
+
+.footer_containner {
+  padding: 5vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.footer_containner .footer_div_contact {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1vw;
+  font-family: "NunitoSans";
+}
+.footer_containner .footer_div_contact ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+.footer_containner .footer_div_contact a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.footer_containner .footer_div_contact a:hover {
+  color: #ff4cfe;
+  transition: all 0.2s;
+}
+
+.footer_containner .footer_brands {
+  display: center;
+  justify-content: center;
+  align-content: center;
+  color: #fff;
+  font-family: "NunitoSans";
+  font-size: 1vw;
+  font-weight: 500;
+}
+.footer_brands img {
+  width: 100%;
+  height: auto;
+}
+.footer_logo_redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer_logo_redes img {
+  width: 10%;
+  height: auto;
+  margin: 10px;
+  color: #fff;
+}
+
+
+@media screen and (max-width: 768px) {
+  .footer_containner {
+    padding: 5vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  .footer_containner .footer_div_contact {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    font-size: 2vw;
+    font-family: "NunitoSans";
+  }
+  .footer_containner .footer_div_contact ul {
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  .footer_containner .footer_div_contact a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  
+  .footer_containner .footer_div_contact a:hover {
+    color: #ff4cfe;
+    transition: all 0.2s;
+  }
+  
+  .footer_containner .footer_brands {
+    display: center;
+    justify-content: center;
+    align-content: center;
+    color: #fff;
+    font-family: "NunitoSans";
+    font-size: 2.5vw;
+    font-weight: 500;
+  }
+  .footer_brands img {
+    width: 200%;
+    height: auto;
+  }
+  .footer_logo_redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer_logo_redes img {
+    width: 13%;
+    height: auto;
+    margin: 2px;
+    color: #fff;
+    margin-top: -30px;
+  }
+  
+
+}

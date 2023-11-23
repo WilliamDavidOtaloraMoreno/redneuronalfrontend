@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "rotulona";
+  src: url("../../../../assets/fonts/rotulona-hand.ffp.woff2") format("woff2");
+}
+@font-face {
+  font-family: "BebasNeue";
+  src: url("../../../../assets/fonts/BebasNeue-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "ArialRonte";
+  src: url("../../../../assets/fonts/ARLRDBD.woff2") format("woff2");
+}
+.containner_Audio {
+  background-image: url("../../../../assets/image/1x/logoAudio.png");
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+.containner_Audio .img_pau {
+  padding-left: 10vw;
+}
+.containner_Audio h1 {
+  padding-top: 5vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "rotulona", sans-serif;
+  font-size: 9vw;
+  padding-bottom: 4vw;
+}
+.containner_Audio h1 span {
+  color: #81e2fc;
+  text-shadow: 4px 1px 0px #d4f6ff, 6px 4px 0px #007691;
+}
+
+.containner_Audio h3 {
+  margin-top: -7vw;
+  padding-top: 0vw;
+  margin-right: 16vw;
+  display: flex;
+  justify-content: right;
+  text-align: center;
+  font-family: "rotulona", sans-serif;
+  font-size: 15vw;
+  padding-bottom: 6vw;
+  transform: rotate(-8deg);
+}
+.containner_Audio h3 span {
+  color: #81e2fc;
+  text-shadow: 4px 1px 0px #d4f6ff, 6px 4px 0px #007691;
+}
+.containner_Audio h2 {
+  padding-left: 11vw;
+  padding-right: 11vw;
+  display: inline-block;
+  text-align: right;
+  width: 100%;
+  height: auto;
+  font-size: 3vw;
+  line-height: 3vw;
+  color: #ffffff;
+  font-family: "BebasNeue", sans-serif;
+}
+
+.containner_Audio h2 .textfirst {
+  color: #ff4cfe;
+  font-family: "BebasNeue", sans-serif;
+}
+.containner_Audio p {
+  padding-left: 4vw;
+  padding-right: 11vw;
+  color: #ffffff;
+  font-size: 2vw;
+  text-align: justify;
+  hyphens: auto;
+  word-break: break-all;
+  direction: rtl;
+  font-family: "ArialRonte", sans-serif;
+  line-height: 2vw;
+}
+.containner_Audio .img_audio {
+  padding-left: 10vw;
+  padding-bottom: 4vw;
+}

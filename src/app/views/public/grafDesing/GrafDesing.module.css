@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "rotulona";
+  src: url("../../../../assets/fonts/rotulona-hand.ffp.woff2") format("woff2");
+}
+@font-face {
+  font-family: "BebasNeue";
+  src: url("../../../../assets/fonts/BebasNeue-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "ArialRonte";
+  src: url("../../../../assets/fonts/ARLRDBD.woff2") format("woff2");
+}
+.containner_grafic {
+  background-image: url("../../../../assets/image/1x/paupipeback.png");
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  /* background-position: left top; */
+}
+.containner_grafic .img_pau {
+  padding-left: 10vw;
+}
+.containner_grafic h1 {
+  padding-top: 5vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "rotulona", sans-serif;
+  font-size: 12vw;
+  padding-bottom: 6vw;
+}
+.containner_grafic h1 span {
+  color: #81e2fc;
+  text-shadow: 4px 1px 0px #d4f6ff, 6px 4px 0px #007691;
+}
+.containner_grafic .texth2 {
+  padding-top: 3vw;
+}
+.containner_grafic h2 {
+  padding-right: 0vw;
+  display: inline-block;
+  direction: rtl;
+  width: 100%;
+  height: auto;
+  line-height: 3vw;
+  color: #ffffff;
+  font-family: "BebasNeue", sans-serif;
+  font-size: 3vw;
+  margin-left: -7vw;
+  letter-spacing: 0px;
+}
+
+.containner_grafic h2 .textfirst {
+  color: #ffffff;
+  font-family: "BebasNeue", sans-serif;
+}
+.containner_grafic h2 .textsecond {
+  color: #ff4cfe;
+  font-family: "BebasNeue", sans-serif;
+}
+.containner_grafic h2 .therttext {
+  color: #fff;
+  font-family: "BebasNeue", sans-serif;
+}
+.containner_grafic h2 .fourthtext {
+  color: #ff4cfe;
+  font-family: "BebasNeue", sans-serif;
+}
+.containner_grafic p {
+  padding-left: 4vw;
+  padding-right: 7vw;
+  color: #ffffff;
+  font-size: 2vw;
+  text-align: justify;
+  hyphens: auto;
+  word-break: break-all;
+  direction: rtl;
+  font-family: "ArialRonte", sans-serif;
+  line-height: 2vw;
+}
+
+.containner_grafic .pipe {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 6vw;
+}
+.containner_grafic .pipe img {
+  width: 60%;
+  height: auto;
+}

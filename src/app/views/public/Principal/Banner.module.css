@@ -1,0 +1,182 @@
+.particles_container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.particle {
+    position: absolute;
+    background: radial-gradient(#0093DB, transparent); /* Efecto de brillo */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: moveParticle 5s linear infinite, fadeInOut 5s ease infinite, sparkle 2s linear infinite; /* Agregamos una nueva animación llamada sparkle */
+    animation-delay: calc(1s * var(--delay)); /* Retraso aleatorio para cada partícula */
+}
+
+.particles_2 {
+    position: absolute;
+    background: radial-gradient(#d2d2d2, transparent); /* Efecto de brillo */
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    animation: moveParticle2 5s linear infinite, fadeInOut 5s ease infinite, sparkle 2s linear infinite; /* Agregamos una nueva animación llamada sparkle */
+    animation-delay: calc(0.5s * var(--delay)); /* Retraso aleatorio para cada partícula */
+}
+
+.particles_3 {
+    position: absolute;
+    background: radial-gradient(#e21bda, transparent); /* Efecto de brillo */
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    animation: moveParticle3 5s linear infinite, fadeInOut 5s ease infinite, sparkle 2s linear infinite; /* Agregamos una nueva animación llamada sparkle */
+    animation-delay: calc(1s * var(--delay)); /* Retraso aleatorio para cada partícula */
+}
+
+
+@keyframes moveParticle {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+    100% {
+        transform: translateY(100vh) translateX(80vw);
+    }
+}
+
+@keyframes moveParticle2 {
+    0% {
+        transform: translateY() translateX();
+    }
+    100% {
+        transform: translateY(10vh) translateX(100vw);
+    }
+}
+
+@keyframes moveParticle3 {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+    100% {
+        transform: translateY(100vh) translateX(10vw);
+    }
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes sparkle {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .particles_container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    
+    .particle {
+        position: absolute;
+        background: radial-gradient(#0093DB, transparent); /* Efecto de brillo */
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        animation: moveParticle 10s linear infinite, fadeInOut 5s ease infinite, sparkle 2s linear infinite; /* Agregamos una nueva animación llamada sparkle */
+        animation-delay: calc(0.5s * var(--delay)); /* Retraso aleatorio para cada partícula */
+    }
+    
+    .particles_2 {
+        position: absolute;
+        background: radial-gradient(#d2d2d2, transparent); /* Efecto de brillo */
+        border-radius: 50%;
+        width: 5px;
+        height: 5px;
+        animation: moveParticle2 5s linear infinite, fadeInOut 5s ease infinite, sparkle 2s linear infinite; /* Agregamos una nueva animación llamada sparkle */
+        animation-delay: calc(0.5s * var(--delay)); /* Retraso aleatorio para cada partícula */
+    }
+    
+    .particles_3 {
+        position: absolute;
+        background: radial-gradient(#e21bda, transparent); /* Efecto de brillo */
+        border-radius: 50%;
+        width: 5px;
+        height: 5px;
+        animation: moveParticle3 10s linear infinite, fadeInOut 5s ease infinite, sparkle 2s linear infinite; /* Agregamos una nueva animación llamada sparkle */
+        animation-delay: calc(0.5s * var(--delay)); /* Retraso aleatorio para cada partícula */
+    }
+    
+    
+    @keyframes moveParticle {
+        0% {
+            transform: translateY(0) translateX(0);
+        }
+        100% {
+            transform: translateY(100vh) translateX(200vh);
+        }
+    }
+    
+    @keyframes moveParticle2 {
+        0% {
+            transform: translateY() translateX();
+        }
+        100% {
+            transform: translateY(10vh) translateX(100vw);
+        }
+    }
+    
+    @keyframes moveParticle3 {
+        0% {
+            transform: translateY(0) translateX(0);
+        }
+        100% {
+            transform: translateY(100vh) translateX(10vw);
+        }
+    }
+    
+    @keyframes fadeInOut {
+        0%, 100% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+    }
+    
+    @keyframes sparkle {
+        0%, 100% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+    }
+}

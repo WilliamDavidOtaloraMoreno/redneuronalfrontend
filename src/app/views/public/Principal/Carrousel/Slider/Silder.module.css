@@ -1,0 +1,44 @@
+.slides {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .list {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+  
+    & > * {
+      margin-right: 10%;
+    }
+    & > *:last-child {
+      margin-right: 0;
+    }
+  }
+  
+  .navButtons {
+    width: 63px;
+    height: 68px;
+    margin: 0px 32px;
+    cursor: pointer;
+  }
+  
+  .dotsControls {
+    display: block;
+    text-align: center;
+  }
+  @media screen and (max-width: 768px){
+    .navButtons {
+      width: 24px;
+      height: 24px;
+      margin: 0px 32px;
+      cursor: pointer;
+    }
+    
+    .dotsControls {
+      display: block;
+      text-align: center;
+    }
+  }
+  

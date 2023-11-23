@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'BebasKai';
+    src: url('../../../../../assets/fonts/BebasKai.woff2') format('woff2');
+  }
+  
+
+.carrousel_container{
+    text-align: center;
+}
+.title{
+    font-size: 2.4vw;
+    font-family: 'BebasKai', sans-serif;
+    color: #fff;
+}
+.title .black_title{
+    color: #0093DB;
+}
+
+.carrousel_icon{
+    margin-top: 5vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+
+}
+.carrousel_icon2{
+    margin-top: 5vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 10vw;
+}
+@media screen and (max-width: 768px){
+    .carrousel_icon{
+        width:50%;
+        height: auto;
+        margin-top: 10vw;
+        margin-left: -12vw;
+        margin-right: 0vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .carrousel_icon2{
+        width:50%;
+        height: auto;
+        margin-top: 10vw;
+        margin-left: -12vw;
+        margin-right: 0vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .title{
+        font-size: 4vw;
+        font-family: 'BebasKai', sans-serif;
+        color: #fff;
+    }
+}

@@ -1,0 +1,695 @@
+@font-face {
+  font-family: "BebasKai";
+  src: url("../../../../../assets/fonts/BebasKai.woff2") format("woff2");
+}
+@font-face {
+  font-family: "ArialRonte";
+  src: url("../../../../../assets/fonts/ARLRDBD.woff2") format("woff2");
+}
+
+.welcome {
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+  color: #fff;
+}
+.welcome h2 {
+  font-family: "BebasKai", sans-serif;
+  line-height: 55px;
+  font-size: 4vw;
+  margin-left: 10vw;
+}
+.welcome .next {
+  color: #0093db;
+  width: 108%;
+  margin-bottom: 50px;
+}
+
+.welcome .parragraf {
+  text-align: justify;
+  margin-left: 10vw;
+  font-family: "ArialRonte";
+  font-size: 1.3vw;
+  width: 80%;
+  padding-bottom: 5.4vw;
+}
+.welcome .parragraf b {
+  font-weight: 800;
+}
+.welcome .button_w {
+  display: flex;
+  justify-content: center;
+  margin-left: 10vw;
+  color: #0093db;
+}
+
+/* css create to form, insert all code o style */
+.form {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 10vw;
+}
+.form .form_enter {
+  border-radius: 2vw;
+  color: #fff;
+  border: 2px solid #0093db;
+  display: flex;
+  flex-direction: column;
+}
+
+.form .form_enter label {
+  margin: 0vw 3vw;
+  font-size: 1vw;
+  font-weight: 500;
+  font-family: "ArialRonte";
+}
+.form .form_enter .label_firts {
+  padding-top: 2vw;
+}
+.form .form_enter input {
+  font-size: 1vw;
+  font-family: "ArialRonte";
+  font-weight: 200;
+  color: #fff;
+  padding-left: 1vw;
+  max-width: 100%;
+  height: 3vw;
+  border-radius: 1vw;
+  border: 2px solid #0093db;
+  background-color: transparent;
+  margin: 0.3vw 3vw;
+}
+.form .form_enter textarea {
+  font-size: 1vw;
+  font-family: "ArialRonte";
+  font-weight: 200;
+  color: #fff;
+  padding-top: 0.2vw;
+  padding-left: 1vw;
+  height: 9vw;
+  border-radius: 1vw;
+  border: 2px solid #0093db;
+  background-color: transparent;
+  margin: 0.3vw 3vw;
+}
+.form .form_enter button {
+  margin: 1vw 7vw;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  background-color: #0093db;
+  color: #fff;
+  height: 2vw;
+  border-radius: 4vw;
+  text-align: center;
+}
+
+
+
+.uiverse {
+  font-size: 1.5em;
+  font-family: "ArialRonte";
+  background-color: #ff4cfe;
+  border-radius: 77px 77px 69px 77px;
+  color: #fff;
+  border-color: #e21bda;
+  transition: all 0.7s;
+  
+}
+
+.uiverse:hover {
+  transition: all 0.7s;
+  --duration: 7s;
+  --easing: linear;
+  --c-color-1: #ff4cfe;
+  --c-color-2: #1a23ff;
+  --c-color-3: #e21bda;
+  --c-color-4: #aa04ce;
+  --c-shadow: #ff4cfe;
+  --c-shadow-inset-top: #aa04ce;
+  --c-shadow-inset-bottom: rgba(255, 250, 215, 0.8);
+  --c-radial-inner: #0505e1;
+  --c-radial-outer: #36d0df;
+  --c-color: #fff;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  display: table;
+  border-radius: 24px;
+  text-align: center;
+  line-height: 1.5;
+  color: var(--c-color);
+  background: radial-gradient(
+    circle,
+    var(--c-radial-inner),
+    var(--c-radial-outer) 100%
+  );
+  box-shadow: 0 0 14px var(--c-shadow);
+}
+
+.uiverse:before {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 24px;
+  box-shadow: inset 0 3px 12px var(--c-shadow-inset-top),
+    inset 0 -3px 4px var(--c-shadow-inset-bottom);
+}
+
+.uiverse .wrapper {
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  overflow: hidden;
+  border-radius: 24px;
+  text-align: center;
+  min-width: 20vw;
+  padding: 0px 0;
+}
+
+.uiverse .wrapper span {
+  display: inline-block;
+  position: relative;
+  font-size: 1vw;
+  z-index: 1;
+}
+
+.uiverse .wrapper .circle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  filter: blur(var(--blur, 8px));
+  background: var(--background, transparent);
+  transform: translate(var(--x, 0), var(--y, 0)) translateZ(0);
+  animation: var(--animation, none) var(--duration) var(--easing) infinite;
+}
+
+.uiverse .wrapper .circle.circle_1,
+.uiverse .wrapper .circle.circle_9,
+.uiverse .wrapper .circle.circle_10 {
+  --background: var(--c-color-4);
+}
+
+.uiverse .wrapper .circle.circle_3,
+.uiverse .wrapper .circle.circle_4 {
+  --background: var(--c-color-2);
+  --blur: 14px;
+}
+
+.uiverse .wrapper .circle.circle_5,
+.uiverse .wrapper .circle.circle_6 {
+  --background: var(--c-color-3);
+  --blur: 16px;
+}
+
+.uiverse .wrapper .circle.circle_2,
+.uiverse .wrapper .circle.circle_7,
+.uiverse .wrapper .circle.circle_8,
+.uiverse .wrapper .circle.circle_11,
+.uiverse .wrapper .circle.circle_12 {
+  --background: var(--c-color-1);
+  --blur: 12px;
+}
+
+.uiverse .wrapper .circle.circle_1 {
+  --x: 0;
+  --y: -40px;
+  --animation: circle_1;
+}
+
+.uiverse .wrapper .circle.circle_2 {
+  --x: 92px;
+  --y: 8px;
+  --animation: circle_2;
+}
+
+.uiverse .wrapper .circle.circle_3 {
+  --x: -12px;
+  --y: -12px;
+  --animation: circle_3;
+}
+
+.uiverse .wrapper .circle.circle_4 {
+  --x: 80px;
+  --y: -12px;
+  --animation: circle_4;
+}
+
+.uiverse .wrapper .circle.circle_5 {
+  --x: 12px;
+  --y: -4px;
+  --animation: circle_5;
+}
+
+.uiverse .wrapper .circle.circle_6 {
+  --x: 56px;
+  --y: 16px;
+  --animation: circle_6;
+}
+
+.uiverse .wrapper .circle.circle_7 {
+  --x: 8px;
+  --y: 28px;
+  --animation: circle_7;
+}
+
+.uiverse .wrapper .circle.circle_8 {
+  --x: 28px;
+  --y: -4px;
+  --animation: circle_8;
+}
+
+.uiverse .wrapper .circle.circle_9 {
+  --x: 20px;
+  --y: -12px;
+  --animation: circle_9;
+}
+
+.uiverse .wrapper .circle.circle_10 {
+  --x: 64px;
+  --y: 16px;
+  --animation: circle_10;
+}
+
+.uiverse .wrapper .circle.circle_11 {
+  --x: 4px;
+  --y: 4px;
+  --animation: circle_11;
+}
+
+.uiverse .wrapper .circle.circle_12 {
+  --blur: 14px;
+  --x: 52px;
+  --y: 4px;
+  --animation: circle_12;
+}
+
+@keyframes circle_1 {
+  33% {
+    transform: translate(0px, 40px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(12px, 94px) translateZ(0);
+  }
+}
+
+@keyframes circle_2 {
+  33% {
+    transform: translate(80px, -10px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(72px, -48px) translateZ(0);
+  }
+}
+
+@keyframes circle_3 {
+  33% {
+    transform: translate(60px, 30px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(12px, 1px) translateZ(0);
+  }
+}
+
+@keyframes circle_4 {
+  33% {
+    transform: translate(76px, -30px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(112px, -20px) translateZ(0);
+  }
+}
+
+@keyframes circle_5 {
+  33% {
+    transform: translate(84px, 28px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(40px, -32px) translateZ(0);
+  }
+}
+
+@keyframes circle_6 {
+  33% {
+    transform: translate(28px, -16px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(76px, -56px) translateZ(0);
+  }
+}
+
+@keyframes circle_7 {
+  33% {
+    transform: translate(8px, 28px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(20px, -60px) translateZ(0);
+  }
+}
+
+@keyframes circle_8 {
+  33% {
+    transform: translate(32px, -4px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(56px, -20px) translateZ(0);
+  }
+}
+
+@keyframes circle_9 {
+  33% {
+    transform: translate(20px, -12px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(80px, -8px) translateZ(0);
+  }
+}
+
+@keyframes circle_10 {
+  33% {
+    transform: translate(68px, 20px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(100px, 28px) translateZ(0);
+  }
+}
+
+@keyframes circle_11 {
+  33% {
+    transform: translate(4px, 4px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(68px, 20px) translateZ(0);
+  }
+}
+
+@keyframes circle_12 {
+  33% {
+    transform: translate(56px, 0px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(60px, -32px) translateZ(0);
+  }
+}
+
+.uiverse .wrappers {
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  overflow: hidden;
+  border-radius: 24px;
+  text-align: center;
+  min-width: 15vw;
+  padding: 0px 0;
+}
+
+.uiverse .wrappers span {
+  display: inline-block;
+  position: relative;
+  font-size: 1vw;
+  z-index: 1;
+}
+
+.uiverse .wrappers .circle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  filter: blur(var(--blur, 8px));
+  background: var(--background, transparent);
+  transform: translate(var(--x, 0), var(--y, 0)) translateZ(0);
+  animation: var(--animation, none) var(--duration) var(--easing) infinite;
+}
+
+.uiverse .wrappers .circle.circle_1,
+.uiverse .wrappers .circle.circle_9,
+.uiverse .wrappers .circle.circle_10 {
+  --background: var(--c-color-4);
+}
+
+.uiverse .wrappers .circle.circle_3,
+.uiverse .wrappers .circle.circle_4 {
+  --background: var(--c-color-2);
+  --blur: 14px;
+}
+
+.uiverse .wrappers .circle.circle_5,
+.uiverse .wrappers .circle.circle_6 {
+  --background: var(--c-color-3);
+  --blur: 16px;
+}
+
+.uiverse .wrappers .circle.circle_2,
+.uiverse .wrappers .circle.circle_7,
+.uiverse .wrappers .circle.circle_8,
+.uiverse .wrappers .circle.circle_11,
+.uiverse .wrappers .circle.circle_12 {
+  --background: var(--c-color-1);
+  --blur: 12px;
+}
+
+.uiverse .wrappers .circle.circle_1 {
+  --x: 0;
+  --y: -40px;
+  --animation: circle_1;
+}
+
+.uiverse .wrappers .circle.circle_2 {
+  --x: 92px;
+  --y: 8px;
+  --animation: circle_2;
+}
+
+.uiverse .wrappers .circle.circle_3 {
+  --x: -12px;
+  --y: -12px;
+  --animation: circle_3;
+}
+
+.uiverse .wrappers .circle.circle_4 {
+  --x: 80px;
+  --y: -12px;
+  --animation: circle_4;
+}
+
+.uiverse .wrappers .circle.circle_5 {
+  --x: 12px;
+  --y: -4px;
+  --animation: circle_5;
+}
+
+.uiverse .wrappers .circle.circle_6 {
+  --x: 56px;
+  --y: 16px;
+  --animation: circle_6;
+}
+
+.uiverse .wrappers .circle.circle_7 {
+  --x: 8px;
+  --y: 28px;
+  --animation: circle_7;
+}
+
+.uiverse .wrappers .circle.circle_8 {
+  --x: 28px;
+  --y: -4px;
+  --animation: circle_8;
+}
+
+.uiverse .wrappers .circle.circle_9 {
+  --x: 20px;
+  --y: -12px;
+  --animation: circle_9;
+}
+
+.uiverse .wrappers .circle.circle_10 {
+  --x: 64px;
+  --y: 16px;
+  --animation: circle_10;
+}
+
+.uiverse .wrappers .circle.circle_11 {
+  --x: 4px;
+  --y: 4px;
+  --animation: circle_11;
+}
+
+.uiverse .wrappers .circle.circle_12 {
+  --blur: 14px;
+  --x: 52px;
+  --y: 4px;
+  --animation: circle_12;
+}
+
+@media screen and (max-width: 768px) {
+  .welcome h2 {
+    font-family: "BebasKai", sans-serif;
+    line-height: 12px;
+    font-size: 6vw;
+    margin-left: 10vw;
+  }
+  .welcome .next {
+    color: #0093db;
+    width: 108%;
+    margin-bottom: 5vw;
+  }
+
+  .welcome .parragraf {
+    text-align: justify;
+    margin-left: 10vw;
+    font-family: "ArialRonte";
+    font-size: 2vw;
+    width: 80%;
+    padding-bottom: 3vw;
+  }
+  .welcome .parragraf b {
+    font-weight: 800;
+  }
+  .welcome .button_w {
+    display: flex;
+    justify-content: center;
+    margin-left: 10vw;
+    color: #0093db;
+  }
+  .uiverse .wrapper {
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    overflow: hidden;
+    border-radius: 24px;
+    text-align: center;
+    min-width: 30vw !important;
+    padding: 0px 0;
+    font-size: 5vw;
+  }
+  
+
+  .uiverse {
+    font-family: "ArialRonte";
+    background-color: #ff4cfe;
+    border-radius: 77px 77px 69px 77px;
+    color: #fff;
+    border-color: #e21bda;
+    transition: all 0.7s;
+  }
+  .uiverse .wrapper span {
+    display: inline-block;
+    position: relative;
+    font-size: 2vw !important;
+    z-index: 1;
+  }
+  .uiverse .wrappers {
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    overflow: hidden;
+    border-radius: 24px;
+    text-align: center;
+    min-width: 25vw;
+    padding: 0px 0;
+    position: relative;
+    left: -4.5vw;
+    top: -1vw;
+  }
+  
+  .uiverse .wrappers span {
+    display: inline-block;
+    position: relative;
+    font-size: 2vw !important;
+    z-index: 1;
+
+  }
+  
+  .uiverse .wrappers .circle {
+    position: absolute;
+    left: 1px;
+    top: 0;
+    width: 40%;
+    height: 40px;
+    border-radius: 50%;
+    filter: blur(var(--blur, 8px));
+    background: var(--background, transparent);
+    transform: translate(var(--x, 0), var(--y, 0)) translateZ(0);
+    animation: var(--animation, none) var(--duration) var(--easing) infinite;
+  }
+  .form {
+    padding-left: 0vw;
+    padding-right: 8vw;
+    padding-top: 10vw;
+  }
+  .form .form_enter {
+    border-radius: 2vw;
+    color: #fff;
+    border: 2px solid #0093db;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form .form_enter label {
+    margin: 0vw 3vw;
+    font-size: 2vw;
+    font-weight: 500;
+    font-family: "ArialRonte";
+  }
+  .form .form_enter .label_firts {
+    padding-top: 2vw;
+  }
+  .form .form_enter input {
+    font-size: 2vw;
+    font-family: "ArialRonte";
+    font-weight: 200;
+    color: #fff;
+    padding-left: 1vw;
+    max-width: 100%;
+    height: 4vw;
+    border-radius: 1vw;
+    border: 1px solid #0093db;
+    background-color: transparent;
+    margin: 0.3vw 3vw;
+  }
+  .form .form_enter textarea {
+    font-size: 2vw;
+    font-family: "ArialRonte";
+    font-weight: 200;
+    color: #fff;
+    padding-top: 0.2vw;
+    padding-left: 1vw;
+    height: 15vw;
+    border-radius: 1vw;
+    border: 1px solid #0093db;
+    background-color: transparent;
+    margin: 0.3vw 3vw;
+  }
+  .form .form_enter button {
+    margin: 1vw 7vw;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    background-color: #0093db;
+    color: #fff;
+    height: 3vw;
+    border-radius: 4vw;
+    text-align: center;
+    display: inline-flex;
+    justify-items: center;
+    align-items: center;
+  }
+}
